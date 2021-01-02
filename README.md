@@ -130,7 +130,7 @@ and don't want the link load the page content
 
 ```ruby
 simple_active_link_to 'Users', users_path, active_disable: :hash
-# => <a href="/users" class="active">Users</a>
+# => <a href="/users#" class="active">Users</a>
 ```
 
 ## Helper Methods
