@@ -126,7 +126,7 @@ simple_active_link_to 'Users', users_path, active_disable: true
 ```
 
 or you want to append it with hash (`#`) at the end of url, it will be useful when you use Turbolinks
-and don't want the link load the page content
+and don't want load the page content when you click the link
 
 ```ruby
 simple_active_link_to 'Users', users_path, active_disable: :hash
