@@ -125,8 +125,7 @@ simple_active_link_to 'Users', users_path, active_disable: true
 # => <span class="active">Users</span>
 ```
 
-or you want to append it with hash (`#`) at the end of url, it will be useful when you use Turbolinks
-and don't want load the page content when you click the link
+or you want to append it with hash (`#`) at the end of url to make the link does not reload the page when clicked
 
 ```ruby
 simple_active_link_to 'Users', users_path, active_disable: :hash
