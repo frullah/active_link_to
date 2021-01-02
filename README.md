@@ -7,7 +7,7 @@ This gem works like [active_link_to](https://github.com/comfy/active_link_to), b
 [![Gem Version](https://img.shields.io/gem/v/simple_active_link_to.svg?style=flat)](http://rubygems.org/gems/simple_active_link_to)
 [![Gem Downloads](https://img.shields.io/gem/dt/simple_active_link_to.svg?style=flat)](http://rubygems.org/gems/simple_active_link_to)
 
-Tested with ruby 2.5 to 2.7 and rails 5.0 to 6.1
+Tested with ruby 2.5 to 3.0 and rails 5.0 to 6.1
 
 ## Installation
 add `gem 'simple_active_link_to'` to Gemfile and run `bundle install`.
@@ -125,12 +125,11 @@ simple_active_link_to 'Users', users_path, active_disable: true
 # => <span class="active">Users</span>
 ```
 
-or you want to append it with hash (`#`) at the end of url, it will be useful when you use Turbolinks
-and don't want the link load the page content
+or you want to append it with hash (`#`) at the end of url to make the link does not reload the page when clicked
 
 ```ruby
 simple_active_link_to 'Users', users_path, active_disable: :hash
-# => <a href="/users" class="active">Users</a>
+# => <a href="/users#" class="active">Users</a>
 ```
 
 ## Helper Methods
