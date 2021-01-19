@@ -84,9 +84,9 @@ module SimpleActiveLinkTo
       case condition
       when :exclusive, :inclusive, nil
         url_path = url.split('#').first.split('?').first
-        url_string = URI.parser.unescape(url_path).force_encoding(Encoding::BINARY)
-        request_uri = URI.parser.unescape(request.path).force_encoding(Encoding::BINARY)
-        
+        url_string = URI::DEFAULT_PARSER.unescape(url_path).force_encoding(Encoding::BINARY)
+        request_uri = URI::DEFAULT_PARSER.unescape(request.path).force_encoding(Encoding::BINARY)
+
         if url_string == request_uri
           true
         elsif condition != :exclusive
