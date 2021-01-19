@@ -5,10 +5,12 @@ on:
     branches: [ master, dev ]
     paths-ignore:
       - "**/README.md"
+      - lib/simple_active_link_to/version.rb
   pull_request:
     branches: [ master, dev ]
     paths-ignore:
       - "**/README.md"
+      - lib/simple_active_link_to/version.rb
 
 jobs:
   tests:
