@@ -1,4 +1,4 @@
-# simple_active_link_to ![CI](https://github.com/frullah/simple_active_link_to/workflows/CI/badge.svg?branch=master) [![Gem Version](https://img.shields.io/gem/v/simple_active_link_to.svg?style=flat)](http://rubygems.org/gems/simple_active_link_to)
+# simple_active_link_to ![Build](https://github.com/frullah/simple_active_link_to/workflows/Build/badge.svg) [![Gem Version](https://img.shields.io/gem/v/simple_active_link_to.svg?style=flat)](http://rubygems.org/gems/simple_active_link_to)
 
 `simple_active_link_to` is a wrapper for [link_to](http://api.rubyonrails.org/classes/ActionView/Helpers/UrlHelper.html#method-i-link_to), with active state by adding an extra css class `active` by default.
 
