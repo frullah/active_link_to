@@ -145,3 +145,7 @@ is_active_link?(users_path, :inclusive)
 active_link_to_class(users_path, active: :inclusive)
 # => 'active'
 ```
+
+## Contributing
+
+Bug reports and pull requests are welcome.
